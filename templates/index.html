@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens Solver</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>N-Queens Solver</h1>
+    <div id="canvas-container">
+        <canvas id="board-canvas" width="400" height="400"></canvas>
+    </div>
+    <div id="controls">
+        <button id="btn-backtracking">Find Solution (Backtracking)</button>
+        <button id="btn-genetic">Find Solution (Genetic Algorithm)</button>
+        <button id="btn-simulated-annealing">Find Solution (Simulated Annealing)</button>
+        <button id="btn-hill-climbing">Find Solution (Hill Climbing)</button>
+        <button id="btn-reset">Reset</button>
+        <div id="adjust-n">
+            <label for="slider-n">Adjust N:</label>
+            <input type="range" id="slider-n" min="4" max="100" value="8">
+        </div>
+    </div>
+    
+    <div id="toast-message" class="toast-message hidden"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
