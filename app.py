@@ -33,5 +33,4 @@ def find_solution():
     
     return jsonify({"error": "Solution not found"}), 400 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
