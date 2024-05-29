@@ -11,15 +11,19 @@
     <div id="canvas-container">
         <canvas id="board-canvas" width="400" height="400"></canvas>
     </div>
+    <div id="loading-spinner" class="hidden">
+        <div class="spinner"></div>
+    </div>
+    
     <div id="controls">
-        <button id="btn-backtracking">Find Solution (Backtracking)</button>
-        <button id="btn-genetic">Find Solution (Genetic Algorithm)</button>
-        <button id="btn-simulated-annealing">Find Solution (Simulated Annealing)</button>
-        <button id="btn-hill-climbing">Find Solution (Hill Climbing)</button>
-        <button id="btn-reset">Reset</button>
-        <div id="adjust-n">
-            <label for="slider-n">Adjust N:</label>
-            <input type="range" id="slider-n" min="4" max="100" value="8">
+        <button id="btn-backtracking" title="Backtracking: Systematically explore possible placements of queens to find a solution.">Backtracking</button>
+        <button id="btn-genetic" title="Genetic Algorithm: Use principles of natural selection and genetics to evolve a solution.">Genetic Algorithm</button>
+        <button id="btn-ant-colony" title="Ant Colony Optimization: Mimic the behavior of ants to find a solution.">Ant Colony Optimization</button>
+        <button id="btn-brute-force">Brute Force</button>
+        <button id="btn-particle-swarm" title="Particle Swarm Optimization: Use particle swarm optimization to find a solution.">Particle Swarm Optimization</button>
+        <br>
+        <label for="input-n">Enter N:</label>
+        <input type="number" id="input-n" min="4" value="8">
         </div>
     </div>
     
